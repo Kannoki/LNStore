@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-body2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.logo-footer {
+    width: 30%;
+}
+
+.logo-navbar {
+    width: 100px;
+}
+
+.contain-bg {
+    background-color: gray;
+    margin-top: 150px;
+}
+
+.left-content {
+    width: 100%;
+}
+
+.title-about {
+    text-align: center;
+    padding: 10px;
+}
+
+.text-about {
+    text-align: justify;
+}
+
+.block {
+    display: block;
+}
+
+/* .right-content {
+} */
+
+.navbar {
+    position: fixed;
+}
+
+.list {
+    background-color: white;
+}
+
+.image-home {
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-footer {
+    background-color: black;
+}
+
+.discord-edit {
+    padding-bottom: 20px;
+}
+
+.title-visit {
+    text-align: center;
+    padding: 10px;
+}
+
+.image-visit {
+    width: 100%;
+}
+
+.map-edit {
+    padding: 30px;
+    width: 100%;
+}
+
+.follow-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-edit {
+    margin: 0 5px;
+    padding: 6px;
+    background-color: black;
+    border-radius: 30%;
+}
+
+.icon-edit:hover {
+    background-color: lightblue;
+}
+
+.br-edit {
+    border: 1px solid red;
+    background-color: red;
+}
+
+.input-edit {
+    padding: 10px 0;
+}
+
+.login-edit {
+    margin: auto;
+    width: 50%;
+    margin-top: 150px;
+}
+
+.logo-login {
+    width: 150px;
+}
+
+.logo-title {
+    font-size: x-large;
+}
+
+.link-regi {
+    position: relative;
+    bottom: 10px;
+}
+
+.text-red-600 {
+    color: red;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .text-contact {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .row-bg {
+        padding-left: 30px;
+    }
+
+    .left-contact {
+        padding-left: 10px;
+    }
+    .map-edit {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .row-bg {
+        padding: 0 20px;
+    }
+}
