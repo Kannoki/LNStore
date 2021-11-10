@@ -3,7 +3,9 @@
 use App\Http\Livewire\AboutComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\ContactComponent;
+use App\Http\Livewire\DetailComponent;
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\StoreComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +29,10 @@ Route::get('/', HomeComponent::class);
 Route::get('/about', AboutComponent::class);
 
 Route::get('/contact', ContactComponent::class);
+
+Route::get('/store', StoreComponent::class);
+
+Route::get('/product/{slug}', DetailComponent::class)->name('product.detail');
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');

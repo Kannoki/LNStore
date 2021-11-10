@@ -10,7 +10,9 @@
             integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        @livewireStyles
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+            integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+            @livewireStyles
         </head>
 
     <body>
@@ -35,7 +37,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Store</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="Store.php">Booklist</a>
+                                <a class="dropdown-item" href="/store">Booklist</a>
                                 <a class="dropdown-item" href="Cart.php">Cart</a>
                             </div>
                         </li>
@@ -177,6 +179,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+        <script src="{{ asset('assets/Js/main.js') }}"></script>
         @livewireScripts
     </body>
 </html>
