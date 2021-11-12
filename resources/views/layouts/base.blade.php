@@ -4,6 +4,7 @@
         <title>Gnoma</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{{asset('assets/images/ElainaChibi.png')}}">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -52,6 +53,7 @@
                                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                                         <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Profile</a>
                                         <a class="dropdown-item" href="{{ route('admin.categories') }}">Categories</a>
+                                        <a class="dropdown-item" href="{{ route('admin.products') }}">Products</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log out</a>
                                         <form id="logout-form" method="POST" action="{{ route('logout') }}">
                                             @csrf

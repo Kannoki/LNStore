@@ -524,6 +524,10 @@ strong {
     font-size: 12px;
 }
 
+.pull-right {
+    float: right;
+}
+
 @media screen and (max-width: 1199px) {
     .text-contact {
         text-align: center;

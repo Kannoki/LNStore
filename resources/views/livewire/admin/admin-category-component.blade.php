@@ -18,6 +18,9 @@
                     </div>
                 </div>
                 <div class="panel-body">
+                    @if (Session::has('message'))
+                        <div class="alert alert-success" role="alert">{{Session::get('message')}}</div>
+                    @endif
                     <table class="table table-striped">
                         <thead>
                             <tr>
@@ -33,7 +36,10 @@
                                     <td>{{ $category->id }}</td>
                                     <td>{{ $category->name }}</td>
                                     <td>{{ $category->slug }}</td>
-                                    <td></td>
+                                    <td>
+                                        <a href="{{route('admin.editcategory',['category_slug' => $category->slug])}}">Edit</a>
+                                        <a href="#" wire:click.prevent="deleteCategory({{$category->id}})">Delete</a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
