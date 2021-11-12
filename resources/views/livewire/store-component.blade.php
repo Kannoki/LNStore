@@ -15,7 +15,7 @@
                     </p>
                     <span class="card-price card-body">${{$product->regular_price}}</span>
                 </a>
-                <a href="#" class="button card-link">Add to Cart</a>
+                <a href="#" class="button card-link" wire:click.prevent="shop({{$product->id}}, '{{$product->name}}', {{$product->regular_price}})">Add to Cart</a>
             </div>
         </div>
         @endforeach

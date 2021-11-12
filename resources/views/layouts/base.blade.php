@@ -38,7 +38,7 @@
                                 aria-haspopup="true" aria-expanded="false">Store</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
                                 <a class="dropdown-item" href="/store">Booklist</a>
-                                <a class="dropdown-item" href="Cart.php">Cart</a>
+                                <a class="dropdown-item" href="/cart">Cart</a>
                             </div>
                         </li>
                     </ul>
@@ -51,6 +51,7 @@
                                         aria-haspopup="true" aria-expanded="false">My Account ({{Auth::user()->name}})</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                                         <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Profile</a>
+                                        <a class="dropdown-item" href="{{ route('admin.categories') }}">Categories</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log out</a>
                                         <form id="logout-form" method="POST" action="{{ route('logout') }}">
                                             @csrf
