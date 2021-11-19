@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel-heading">
-                <div class="row">
+                <div class="row p-3">
                     <div class="col-md-6">
                         All Products
                     </div>

@@ -70,12 +70,14 @@
                         </div>
                         <input type="password" name="password" class="form-control" placeholder="Password" required autocomplete="current-password">
                     </div>
-                    <x-jet-validation-errors class=""/>
+                    @if ($errors->any())
+                        <div class="text-danger pb-3">Wrong email or password!</div>
+                    @endif
                     <div class="form-group">
                         <input type="submit" name="submit" value="Login" class="btn btn-outline-primary login_btn">
                     </div>
                     <a href="{{ route('password.request') }}">
-                        <div class="link-regi pt-1 pl-3">Forgot Your Password?</div>
+                        <div class="link-regi pt-1 pl-2">Forgot Your Password?</div>
                     </a>
                 </form>
                 

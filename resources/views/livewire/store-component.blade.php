@@ -4,7 +4,7 @@
         <div class="card-content col-lg-4">
             <div class="card">
                 <a href="{{ route('product.detail',['slug'=>$product->slug]) }}" title="{{$product->name}}" class="card-link">
-                    <img src="{{ asset('assets/images/book')}}/{{$product->image}}" class="card-img-top" alt="{{$product->name}}">
+                    <img src="{{ asset('assets/products')}}/{{$product->image}}" class="card-img-top" alt="{{$product->name}}" style="width: max-content" >
                     <h2 class="card-title ellipsis-title">{{ $product->name }}</h2>
                     <p class="card-body">
                         @php

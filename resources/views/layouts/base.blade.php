@@ -166,8 +166,8 @@
             <!-- Footer Links -->
 
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://mdbootstrap.com/">Gnoma.com</a>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright
+                <span>Gnoma</span>
             </div>
             <!-- Copyright -->
 

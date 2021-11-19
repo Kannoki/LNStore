@@ -83,6 +83,7 @@
                         </div>
                         <input type="email" id="email" name="email" class="form-control" placeholder="Email" :value="old('email')" :value="email" required>
                     </div>
+                    
                     <div class="row">
                         <div class="input-group form-group col-12 col-sm-12">
                             <div class="input-group-prepend">
@@ -102,7 +103,7 @@
                     <div class="form-group button-center">
                         <input type="submit" name="register" value="Register" class="btn btn-outline-primary login_btn">
                     </div>
-
+                    <x-jet-validation-errors class="mb-4"/>
                 </form>
                 <a href="{{ route('login') }}">
                     <div class=""><span class="link-regi">Already have an account?</span></div>

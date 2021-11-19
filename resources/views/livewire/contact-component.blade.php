@@ -3,11 +3,11 @@
         <div class="col-12 col-sm-12 col-lg-12 col-xl-6">
             <div class="p-0 col-12 text-contact">
                 <h1 class="title-about">Contact Us</h1>
-                <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> 155 Yên Khê 2, Phường Thanh Khê
+                <p style="color: white"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> 155 Yên Khê 2, Phường Thanh Khê
                     Đông, Quận Thanh Khê, TP.Đà Nẵng
                 </p>
-                <p><span><i class="fas fa-mail-bulk"></i></span> Huy225dn@gmail.com</p>
-                <p><span><i class="fa fa-phone" aria-hidden="true"></i></span> 091636512</p>
+                <p style="color: white"><span><i class="fas fa-mail-bulk"></i></span> Huy225dn@gmail.com</p>
+                <p style="color: white"><span><i class="fa fa-phone" aria-hidden="true"></i></span> 091636512</p>
             </div>
             <div class="p-0 col-12">
                 <h1 class="title-about">Follow Us</h1>

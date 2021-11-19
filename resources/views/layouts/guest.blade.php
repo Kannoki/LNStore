@@ -60,8 +60,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Store</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="Store.php">Booklist</a>
-                                <a class="dropdown-item" href="Cart.php">Cart</a>
+                                <a class="dropdown-item" href="/store">Booklist</a>
+                                <a class="dropdown-item" href="/cart">Cart</a>
                             </div>
                         </li>
                     </ul>
