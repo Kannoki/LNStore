@@ -39,17 +39,32 @@
         <h1>Send Feedback</h1>
     </div>
     <div>
-        <form action="">
+        @if (Session::has('message'))
+            <div class="alert alert-success" role="alert">{{Session::get('message')}}</div>
+        @endif
+        <form action="" wire:submit.prevent="sendMessage">
             <div class="form-group row col-12">
-                <div class="col-6 input-edit"><input type="text" class="form-control" name="" id="" placeholder="Name">
+                <div class="col-6 input-edit"><input type="text" class="form-control" name="name" id="" placeholder="Name" wire:model="name">
                 </div>
-                <div class="col-6 input-edit"><input type="email" class="form-control" name="" id=""
+                @error('name')
+                    <div class="text-danger">{{$message}}</div>
+                @enderror
+                <div class="col-6 input-edit"><input type="email" class="form-control" name="email" id="" wire:model="email"
                         placeholder="Email"></div>
-                <div class="col-12 input-edit"><input class="form-control" type="text" name="" id=""
+                @error('email')
+                    <div class="text-danger">{{$message}}</div>
+                @enderror
+                <div class="col-12 input-edit"><input class="form-control" type="text" name="subject" id="" wire:model="subject"
                         placeholder="Subject"></div>
-                <div class="col-12 input-edit"><textarea class="form-control" id="" rows="3"
+                @error('subject')
+                    <div class="text-danger">{{$message}}</div>
+                @enderror
+                <div class="col-12 input-edit"><textarea class="form-control" name="comment" id="" rows="3" wire:model="comment"
                         placeholder="Your Feedback"></textarea>
                 </div>
+                @error('comment')
+                    <div class="text-danger">{{$message}}</div>
+                @enderror
                 <div class="col-12 input-edit"><button class="btn btn-primary" type="submit">Send Feeback</button></div>
             </div>
         </form>

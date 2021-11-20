@@ -79,7 +79,7 @@
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"><i class="fas fa-mail-bulk    "></i></span>
                         </div>
                         <input type="email" id="email" name="email" class="form-control" placeholder="Email" :value="old('email')" :value="email" required>
                     </div>
@@ -87,14 +87,14 @@
                     <div class="row">
                         <div class="input-group form-group col-12 col-sm-12">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-person-booth"></i></span>
+                                <span class="input-group-text"><i class="fa fa-key" aria-hidden="true"></i></span>
                             </div>
                             <input type="password" id="password" name="password" class="form-control" placeholder="Password" required autocomplete="new-password">
                         </div>
 
                         <div class="input-group form-group col-12 col-sm-12">    
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+                                <span class="input-group-text"><i class="fas fa-key    "></i></span>
                             </div>
                             <input class="form-control" type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirm Password" required autocomplete="new-password">
                         </div>

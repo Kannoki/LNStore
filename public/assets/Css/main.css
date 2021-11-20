@@ -9,6 +9,7 @@
 *::after {
     box-sizing: border-box;
     color: white;
+    font-size: 16px;
 }
 
 body {
@@ -361,6 +362,7 @@ strong {
     border: solid 1px #e8e8e8;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    list-style-type: none;
 }
 
 .cart_item {
@@ -528,10 +530,38 @@ strong {
     float: right;
 }
 
+.product_link:hover {
+    text-decoration: none;
+}
+
+.product_link span:hover {
+    color: lightblue;
+}
+
+.profile_edit {
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.product_image {
+    width: max-content;
+    height: 200px;
+}
+
+.store_images {
+    padding: 10px;
+}
+
 @media screen and (max-width: 1199px) {
     .text-contact {
         text-align: center;
     }
+}
+
+.text-red-600 li {
+    color: red;
+    padding-right: 40px;
 }
 
 @media screen and (min-width: 768px) {

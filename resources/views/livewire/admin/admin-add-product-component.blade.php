@@ -87,9 +87,7 @@
                                     <option value="instock">InStock</option>
                                     <option value="outofstock">Out of Stock</option>
                                 </select>
-                                @error('stock_status')
-                                    <p class="text-danger">{{$message}}</p>
-                                @enderror
+                            
                             </div>
                         </div>
                         <div class="form-group">

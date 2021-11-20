@@ -6,7 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="{{asset('assets/images/ElainaChibi.png')}}">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
-
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/chosen.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/color-01.css') }}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
             integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -49,11 +54,12 @@
                                 @if(Auth::user()->utype === 'ADM')
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">My Account ({{Auth::user()->name}})</a>
+                                        aria-haspopup="true" aria-expanded="false"><img class="profile_edit" src="{{Auth::user()->profile_photo_url}}" alt="{{Auth::user()->name}}">{{Auth::user()->name}}</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                                         <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Profile</a>
                                         <a class="dropdown-item" href="{{ route('admin.categories') }}">Categories</a>
                                         <a class="dropdown-item" href="{{ route('admin.products') }}">Products</a>
+                                        <a class="dropdown-item" href="{{ route('admin.contact') }}">Contact</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log out</a>
                                         <form id="logout-form" method="POST" action="{{ route('logout') }}">
                                             @csrf
@@ -63,7 +69,7 @@
                                 @else
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">My Account ({{Auth::user()->name}})</a>
+                                        aria-haspopup="true" aria-expanded="false"><img class="profile_edit" src="{{Auth::user()->profile_photo_url}}" alt="{{Auth::user()->name}}">{{Auth::user()->name}}</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                                         <a class="dropdown-item" href="{{ route('user.dashboard') }}">Profile</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log out</a>
@@ -182,6 +188,15 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+        <script src="{{ asset('assets/Js/jquery-1.12.4.minb8ff.js?ver=1.12.4') }}"></script>
+        <script src="{{ asset('assets/Js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4') }}"></script>
+        <script src="{{ asset('assets/Js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets/Js/jquery.flexslider.js') }}"></script>
+        <script src="{{ asset('assets/Js/chosen.jquery.min.js') }}"></script>
+        <script src="{{ asset('assets/Js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('assets/Js/jquery.countdown.min.js') }}"></script>
+        <script src="{{ asset('assets/Js/jquery.sticky.js') }}"></script>
+        <script src="{{ asset('assets/Js/functions.js') }}"></script>
         <script src="{{ asset('assets/Js/main.js') }}"></script>
         @livewireScripts
     </body>

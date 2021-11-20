@@ -1,5 +1,5 @@
 <div class="container contain-bg detail-bg">
-	<div class="row">
+	<div class="row p-4">
 			<div class="col-md-5">
 				<div class="project-info-box mt-0">
 					<h5 style="color: black">Product Details</h5>
