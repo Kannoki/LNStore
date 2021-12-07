@@ -9,7 +9,7 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            <div>   
+            <div>
                 <x-jet-label for="name" value="{{ __('Name') }}" />
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
@@ -63,10 +63,10 @@
     <div class="login-edit container">
         <div class="card card-login mx-auto text-center bg-dark">
             <div class="card-header mx-auto bg-dark">
-                <span> <img src="{{ asset('assets/images/Book.png') }}" class="logo-login" alt="Logo"> </span><br />
+                <span> <img src="{{ asset('assets/images/logo.png') }}" class="logo-login" style="height: 65px" alt="Logo"> </span><br />
                 <span class="logo-title mt-5"> Register </span>
             </div>
-            
+
             <div class="card-body">
                 <form name="frm-login" action="{{ route('register') }}" method="POST">
                     @csrf
@@ -83,7 +83,7 @@
                         </div>
                         <input type="email" id="email" name="email" class="form-control" placeholder="Email" :value="old('email')" :value="email" required>
                     </div>
-                    
+
                     <div class="row">
                         <div class="input-group form-group col-12 col-sm-12">
                             <div class="input-group-prepend">
@@ -92,7 +92,7 @@
                             <input type="password" id="password" name="password" class="form-control" placeholder="Password" required autocomplete="new-password">
                         </div>
 
-                        <div class="input-group form-group col-12 col-sm-12">    
+                        <div class="input-group form-group col-12 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-key    "></i></span>
                             </div>

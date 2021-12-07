@@ -26,7 +26,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Gnoma</title>
+        <title>WeLight</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
@@ -41,7 +41,7 @@
     <body>
         <header>
             <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-                <a class="navbar-brand" href="/"><img class="logo-navbar" src="{{ asset('assets/images/Book.png') }}" alt=""><span
+                <a class="navbar-brand" href="/"><img class="logo-navbar" src="{{ asset('assets/images/logo.png') }}" alt=""><span
                         class="sr-only">(current)</span></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -50,12 +50,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact<span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Store</a>
@@ -63,7 +57,14 @@
                                 <a class="dropdown-item" href="/store">Booklist</a>
                                 <a class="dropdown-item" href="/cart">Cart</a>
                             </div>
+                        </li>s
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+
                     </ul>
                     <ul class="navbar-nav">
                         @if(Route::has('login'))
@@ -109,8 +110,8 @@
 
         {{ $slot }}
 
-        
-        
+
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>

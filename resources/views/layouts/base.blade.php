@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Gnoma</title>
+        <title>WeLight</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="{{asset('assets/images/ElainaChibi.png')}}">
+        <link rel="icon" href="{{asset('assets/images/logo.png')}}">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.min.css') }}">
@@ -24,7 +24,7 @@
     <body>
         <header>
             <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-                <a class="navbar-brand" href="/"><img class="logo-navbar" src="{{ asset('assets/images/Book.png') }}" alt=""><span
+                <a class="navbar-brand" href="/"><img class="logo-navbar" src="{{ asset('assets/images/logo.png') }}" style="height: 65px" alt=""><span
                         class="sr-only">(current)</span></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -33,12 +33,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact<span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Store</a>
@@ -46,6 +40,12 @@
                                 <a class="dropdown-item" href="/store">Booklist</a>
                                 <a class="dropdown-item" href="/cart">Cart</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact<span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -107,7 +107,7 @@
                     <div class="col-md-6 mt-md-0 mt-3">
 
                         <!-- Content -->
-                        <img class="logo-footer" src="{{ asset('assets/images/Book.png') }}" alt="Gnoma">
+                        <img class="logo-footer" src="{{ asset('assets/images/logo.png') }}" alt="">
                         <a href="mailto:Huy225dn@gmail.com" class="block" aria-describedby="a11y-external-message">
                             heythere@Gnoma.com
                         </a>
@@ -173,12 +173,12 @@
 
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">© 2020 Copyright
-                <span>Gnoma</span>
+                <span>Welight</span>
             </div>
             <!-- Copyright -->
 
         </footer>
-        
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>

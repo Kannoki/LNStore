@@ -6,7 +6,7 @@
                 <a href="{{ route('product.detail',['slug'=>$product->slug]) }}" title="{{$product->name}}" class="card-link">
                     <img src="{{ asset('assets/products')}}/{{$product->image}}" class="card-img-top store_images" alt="{{$product->name}}" >
                     <h2 class="card-title ellipsis-title">{{ $product->name }}</h2>
-                    <p class="card-body">
+                    <p class="card-body" style="height:100px">
                         @php
                             $in = $product->short_description;
                             $out = strlen($in) > 80 ? substr($in,0,80)."..." : $in;

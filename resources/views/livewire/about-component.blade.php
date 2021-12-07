@@ -3,16 +3,7 @@
     <div class="row row-bg">
         <div class="col-12 col-md-6 col-lg-7 col-xl-8 text-about">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat natus tenetur sequi tempora porro
-                nostrum harum maxime ex non ipsa illum ut deserunt repellendus animi saepe quo commodi, rem asperiores!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam quaerat excepturi? Error
-                nulla fugiat repellendus velit. Odit reiciendis, sit nesciunt vero expedita cum dolor, minus repellendus
-                error iusto vitae!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat natus tenetur sequi tempora porro
-                nostrum harum maxime ex non ipsa illum ut deserunt repellendus animi saepe quo commodi, rem asperiores!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam quaerat excepturi? Error
-                nulla fugiat repellendus velit. Odit reiciendis, sit nesciunt vero expedita cum dolor, minus repellendus
-                error iusto vitae!
+                Notthing here!ヾ(•ω•`)o
             </p>
         </div>
         <div class="col-12 col-md-6 col-lg-5 col-xl-4 discord-edit">
