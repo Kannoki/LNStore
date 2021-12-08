@@ -87,7 +87,7 @@
                                     <option value="instock">InStock</option>
                                     <option value="outofstock">Out of Stock</option>
                                 </select>
-                            
+
                             </div>
                         </div>
                         <div class="form-group">
@@ -124,9 +124,9 @@
                             <label for="" class="col-md-4 col-xl-12  control-label">Category</label>
                             <div class="col-md-4 col-xl-12">
                                 <select name="" id="" class="form-control" wire:model="category_id" >
-                                    <option value="">Select Category</option>
+                                    <option value="" style="color:black">Null</option>
                                     @foreach ($categories as $category)
-                                        <option value="{{$category->id}}">{{$category->name}}</option>
+                                        <option value="{{$category->id}}" style="color:black">{{$category->name}}</option>
                                     @endforeach
                                 </select>
                                 @error('category_id')

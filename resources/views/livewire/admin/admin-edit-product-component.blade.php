@@ -93,18 +93,18 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-md-4 col-xl-12  control-label">Featured</label>
+                            <label for="" class="col-md-4 col-xl-12  control-label" >Featured</label>
                             <div class="col-md-4 col-xl-12">
                                 <select name="" id="" class="form-control" wire:model="featured" >
-                                    <option value="0">No</option>
-                                    <option value="1">Yes</option>
+                                    <option value="0" style="color:black">No</option>
+                                    <option value="1" style="color:black">Yes</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="" class="col-md-4 col-xl-12  control-label">Quantity</label>
                             <div class="col-md-4 col-xl-12">
-                                <input type="text" placeholder="Quantity" class="form-control input-md" wire:model="quantity" />                           
+                                <input type="text" placeholder="Quantity" class="form-control input-md" wire:model="quantity" />
                             </div>
                             @error('quantity')
                                     <p class="text-danger">{{$message}}</p>
@@ -128,9 +128,9 @@
                             <label for="" class="col-md-4 col-xl-12  control-label">Category</label>
                             <div class="col-md-4 col-xl-12">
                                 <select name="" id="" class="form-control" wire:model="category_id" >
-                                    <option value="">Select Category</option>
+                                    <option value="" style="color:black">Null</option>
                                     @foreach ($categories as $category)
-                                        <option value="{{$category->id}}">{{$category->name}}</option>
+                                        <option value="{{$category->id}}" style="color:black">{{$category->name}}</option>
                                     @endforeach
                                 </select>
                                 @error('category_id')
